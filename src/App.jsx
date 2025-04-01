@@ -9,7 +9,7 @@ const App = () => {
       {/* h-screen: height will be size of screen */}
       {/* leading-none: will reduce the line height, tacking-tight will reduce the letter spacing : 
       you can see them on docs of tailwindss just search them there */}
-      {/* absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]: 
+      {/* absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]: (- before translate is minus)
       will make the text in center and it's absolute to outer div it's relative */}
       <h1 className=' absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] text-[13vw] leading-none tracking-tight'>My Docs</h1>
     </div>
