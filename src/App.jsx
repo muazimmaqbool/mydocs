@@ -1,5 +1,7 @@
 import React from 'react'
 
+//docs of tailwind css: https://tailwindcss.com/docs/installation/using-vite
+
 //called from main.jsx
 const App = () => {
   return (
