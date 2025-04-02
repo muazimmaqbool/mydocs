@@ -7,6 +7,10 @@ const App = () => {
   return (
     <div className="relative w-full h-screen bg-zinc-800">
       {/* h-screen: height will be size of screen */}
+
+      {/* navigation bar */}
+      <div className="w-full py-10">Documents and Tasks</div>
+
       {/* leading-none: will reduce the line height, tacking-tight will reduce the letter spacing : 
       you can see them on docs of tailwindss just search them there */}
       {/* absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]: (- before translate is minus)
