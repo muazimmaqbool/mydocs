@@ -2,3 +2,8 @@
 *{
     font-family: "Gilroy";
 }
+
+/* it's used to change the color of text which user select via cursor for copy-past */
+::selection{
+    color:yellowgreen
+}
