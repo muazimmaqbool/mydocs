@@ -4,7 +4,7 @@ const Background = () => {
   return (
     <>
       {/* navigation bar */}
-      <div className="w-full py-8 flex justify-center text-zinc-500 text-xl font-semibold">
+      <div className="absolute top-[5%] w-full flex justify-center text-zinc-500 text-xl font-semibold">
         Documents and Tasks
       </div>
 
