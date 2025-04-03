@@ -2,7 +2,7 @@ import React from "react";
 
 const Background = () => {
   return (
-    <>
+    <div className="fixed z-[2] w-full h-screen">
       {/* navigation bar */}
       <div className="absolute top-[5%] w-full flex justify-center text-zinc-500 text-xl font-semibold">
         Documents and Tasks
@@ -15,7 +15,7 @@ const Background = () => {
       <h1 className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] text-[13vw] leading-none tracking-tight font-semibold text-zinc-900">
         My Docs.
       </h1>
-    </>
+    </div>
   );
 };
 
