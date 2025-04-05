@@ -1,5 +1,6 @@
 import React from "react";
 
+//called from App.jsx
 const Background = () => {
   return (
     <div className="fixed z-[2] w-full h-screen">
