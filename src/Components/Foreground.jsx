@@ -22,7 +22,7 @@ const Foreground = () => {
       tag: {
         isOpen: true,
         tagTitle: "Download Now",
-        tagColor: "green",
+        tagColor: "blue",
       },
     },
     {
