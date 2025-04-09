@@ -9,7 +9,7 @@ const Foreground = () => {
       desc: "This is the test description inside the card component",
       fileSize: ".4mb",
       close: true,
-      tab: {
+      tag: {
         isOpen: true,
         tagTitle: "Download Now",
         tagColor: "green",
