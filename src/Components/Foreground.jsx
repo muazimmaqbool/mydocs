@@ -21,7 +21,7 @@ const Foreground = () => {
       close: true,
       tag: {
         isOpen: true,
-        tagTitle: "Download Now",
+        tagTitle: "Upload",
         tagColor: "blue",
       },
     },
@@ -30,8 +30,8 @@ const Foreground = () => {
       fileSize: "3mb",
       close: true,
       tag: {
-        isOpen: true,
-        tagTitle: "Download Now",
+        isOpen: false,
+        tagTitle: "Upload",
         tagColor: "green",
       },
     },
