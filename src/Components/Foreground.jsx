@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-
+import  {motion} from "framer-motion"
 //called from App.jsx
 //the cards will come inside this component
 const Foreground = () => {
