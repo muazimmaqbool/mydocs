@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import Card from "./Card";
-import  {motion} from "framer-motion"
+
 //called from App.jsx
 //the cards will come inside this component
 const Foreground = () => {
@@ -36,12 +36,13 @@ const Foreground = () => {
       },
     },
   ];
+  const ref=useRef(null)
   return (
-    <div className="fixed top-0 left-0 z-[3] w-full h-full flex gap-5 flex-wrap p-10">
+    <div ref={ref} className="fixed top-0 left-0 z-[3] w-full h-full flex gap-5 flex-wrap p-10">
       {/* bg-sky-800/50 means 50% transparent, 50 means 50% opacity */}
       {
         data.map((item,index)=>(
-          <Card data={item}/>
+          <Card data={item} reference={ref}/>
         ))
       }
     </div>
