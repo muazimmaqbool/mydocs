@@ -13,8 +13,8 @@ const Background = () => {
         you can see them on docs of tailwindss just search them there */}
       {/* absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]: (- before translate is minus)
             will make the text in center and it's absolute to outer div it's relative */}
-      <h1 className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] text-[13vw] leading-none tracking-tight font-semibold text-zinc-900">
-        My Docs.
+      <h1 className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] text-[12vw] leading-none tracking-tight font-semibold text-zinc-900">
+        My Tasks.
       </h1>
     </div>
   );

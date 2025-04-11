@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 //called from Foreground.jsx
 const Card = ({ data, reference }) => {
-
+  
   //Drag docs: https://motion.dev/docs/react-gestures#drag
   return (
     <motion.div
