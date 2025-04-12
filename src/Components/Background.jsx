@@ -22,14 +22,16 @@ const Background = () => {
       <h4>
       Organize. Prioritize. Done.
       </h4>
-      <h4>|</h4>
+      <p>|</p>
       <h4>
       Your day, your way.
       </h4>
-      <h4>|</h4>
+      <p>|</p>
       <h4>
       Plan it. Do it
       </h4>
+      <p>|</p>
+      <h4>Your work, all in one place.</h4>
       </div>
      
     </div>
