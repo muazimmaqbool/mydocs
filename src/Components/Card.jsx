@@ -15,7 +15,7 @@ const Card = ({ data, reference }) => {
       whileDrag={{ scale: 1.1}}
       dragElastic={0.1}
       dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
-      className="relative w-60 h-72 flex-shrink-0 bg-zinc-900/90 px-3 py-7 text-white rounded-[45px] overflow-hidden"
+      className="relative w-60 h-72 flex-shrink-0 bg-zinc-900/90 p-3 text-white rounded-[45px] overflow-hidden"
     >
       {/* bg-zinc-900/10 in this 90 means 90% opacity */}
 
