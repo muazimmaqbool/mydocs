@@ -24,6 +24,7 @@ const Card = ({ data, reference }) => {
       flow of the page */}
 
       <p className="text-sm text-center">Doc Title</p>
+      <div className="border-[1px] border-zinc-800"></div>
       <p className="text-sm mt-2 text-center font-semibold leading-tight">{data?.desc}</p>
       <div className="footer absolute bottom-0  w-full left-0 ">
         <div className="flex items-center justify-between mb-3 py-3 px-8 ">
