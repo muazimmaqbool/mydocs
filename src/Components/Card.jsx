@@ -1,18 +1,19 @@
 import React from "react";
-import { FaRegEye, FaRegFileAlt } from "react-icons/fa";
+import { FaRegEdit, FaRegEye, FaRegFileAlt } from "react-icons/fa";
 import { LuDownload } from "react-icons/lu";
 import { IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion";
+import { MdDeleteOutline } from "react-icons/md";
+import { CiEdit } from "react-icons/ci";
 
 //called from Foreground.jsx
 const Card = ({ data, reference }) => {
-  
   //Drag docs: https://motion.dev/docs/react-gestures#drag
   return (
     <motion.div
       drag
       dragConstraints={reference}
-      whileDrag={{ scale: 1.1}}
+      whileDrag={{ scale: 1.1 }}
       dragElastic={0.1}
       dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
       className="relative w-60 h-72 flex-shrink-0 bg-zinc-900/90 p-3 text-white rounded-[45px] overflow-hidden"
@@ -25,21 +26,31 @@ const Card = ({ data, reference }) => {
 
       <p className="text-sm text-center">Doc Title</p>
       <div className="border-[1px] border-zinc-800"></div>
-      <p className="text-sm mt-2 text-center font-semibold leading-tight">{data?.desc}</p>
-      
+      <p className="text-sm mt-2 text-center font-semibold leading-tight">
+        {data?.desc}
+      </p>
+
       <div className="footer absolute bottom-0  w-full left-0 ">
         {/* <div className="border-[1px] border-zinc-800"></div> */}
-        <div className="flex items-center justify-between mb-3 py-3 px-8 ">
-         <span className="flex items-center justify-center w-7 h-7">
-         <FaRegEye/>
-         </span>
-          <span className="flex items-center justify-center w-7 h-7">
+        <div className="flex items-center justify-between mb-3  px-5 ">
+          <span className="flex items-center justify-center">
+            <FaRegEye fontSize={"20px"}/>
+          </span>
+          <div className="flex items-center gap-3">
+            {/* <span className="flex items-center justify-center">
+              <CiEdit fontSize={"20px"}/>
+            </span> */}
+            <span className="flex items-center justify-center">
+              <MdDeleteOutline fontSize={"20px"}/>
+            </span>
+          </div>
+          {/* <span className="flex items-center justify-center w-7 h-7">
             {data?.close ? (
               <IoMdClose />
             ) : (
               <LuDownload size="0.7em" color="#fff" />
             )}
-          </span>
+          </span> */}
         </div>
         {data?.tag?.isOpen && (
           <div
