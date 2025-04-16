@@ -47,7 +47,7 @@ const Card = ({ data, reference }) => {
         </div>
         {data?.tag?.isOpen && (
           <div
-            className={`tag w-full py-2 ${
+            className={`tag w-full py-1 ${
               data?.tag?.tagColor === "blue" ? "bg-blue-600" : "bg-green-600"
             } flex items-center justify-center`}
           >
