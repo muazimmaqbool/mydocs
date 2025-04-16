@@ -30,7 +30,7 @@ const Foreground = () => {
       fileSize: "3mb",
       close: true,
       tag: {
-        isOpen: false,
+        isOpen: true,
         tagTitle: "Upload",
         tagColor: "green",
       },
