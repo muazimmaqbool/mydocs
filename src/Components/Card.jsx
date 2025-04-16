@@ -31,8 +31,8 @@ const Card = ({ data, reference }) => {
       </p>
 
       <div className="footer absolute bottom-0  w-full left-0 ">
-        {/* <div className="border-[1px] border-zinc-800"></div> */}
-        <div className="flex items-center justify-between mb-3  px-5 ">
+        <div className="border-[1px] border-zinc-800"></div>
+        <div className="flex items-center justify-between mb-2 mt-1  px-5 ">
           <span className="flex items-center justify-center">
             <FaRegEye fontSize={"20px"}/>
           </span>
@@ -44,13 +44,6 @@ const Card = ({ data, reference }) => {
               <MdDeleteOutline fontSize={"20px"}/>
             </span>
           </div>
-          {/* <span className="flex items-center justify-center w-7 h-7">
-            {data?.close ? (
-              <IoMdClose />
-            ) : (
-              <LuDownload size="0.7em" color="#fff" />
-            )}
-          </span> */}
         </div>
         {data?.tag?.isOpen && (
           <div
