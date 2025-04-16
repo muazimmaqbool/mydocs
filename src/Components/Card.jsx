@@ -1,5 +1,5 @@
 import React from "react";
-import { FaRegFileAlt } from "react-icons/fa";
+import { FaRegEye, FaRegFileAlt } from "react-icons/fa";
 import { LuDownload } from "react-icons/lu";
 import { IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion";
@@ -26,10 +26,14 @@ const Card = ({ data, reference }) => {
       <p className="text-sm text-center">Doc Title</p>
       <div className="border-[1px] border-zinc-800"></div>
       <p className="text-sm mt-2 text-center font-semibold leading-tight">{data?.desc}</p>
+      
       <div className="footer absolute bottom-0  w-full left-0 ">
+        {/* <div className="border-[1px] border-zinc-800"></div> */}
         <div className="flex items-center justify-between mb-3 py-3 px-8 ">
-          <h5>{data?.fileSize}</h5>
-          <span className="flex items-center justify-center w-7 h-7 bg-zinc-600 rounded-full">
+         <span className="flex items-center justify-center w-7 h-7">
+         <FaRegEye/>
+         </span>
+          <span className="flex items-center justify-center w-7 h-7">
             {data?.close ? (
               <IoMdClose />
             ) : (
