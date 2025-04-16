@@ -26,7 +26,7 @@ const Card = ({ data, reference }) => {
 
       <p className="text-sm text-center">Doc Title</p>
       <div className="border-[1px] border-zinc-800"></div>
-      <p className="text-sm mt-2 text-center font-semibold leading-tight">
+      <p className="text-sm mt-2 text-center font-normal ">
         {data?.desc}
       </p>
 
