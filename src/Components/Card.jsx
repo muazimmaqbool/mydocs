@@ -25,9 +25,9 @@ const Card = ({ data, reference }) => {
       basically using it will not through the cards out of the bounders of the div which is inside Foreground component, basically not through out of the
       flow of the page */}
 
-      <p className="text-sm text-center">Doc Title</p>
+      <p className="text-sm text-center">{data?.title}</p>
       <div className="border-[1px] border-zinc-800"></div>
-      <p className="text-sm mt-2 text-center font-normal ">{data?.desc}</p>
+      <p className="text-sm mt-2 text-center font-normal ">{data?.text}</p>
 
       <div className="footer absolute bottom-0  w-full left-0 ">
         <div className="border-[1px] border-zinc-800"></div>

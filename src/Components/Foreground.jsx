@@ -6,9 +6,9 @@ import Card from "./Card";
 const Foreground = () => {
   const data = [
     {
-      desc: "This is the test description inside the card component",
-      fileSize: ".4mb",
-      close: true,
+      title:"Fix this bug",
+      text: "This is the test description inside the card component",
+      priority:0,
       tag: {
         isOpen: true,
         tagTitle: "Download Now",
@@ -16,9 +16,9 @@ const Foreground = () => {
       },
     },
     {
-      desc: "This is the test description inside the card component",
-      fileSize: "5mb",
-      close: true,
+      title:"Workout Schedule",
+      text: "This is the test description inside the card component",
+      priority:2,
       tag: {
         isOpen: true,
         tagTitle: "Upload",
@@ -26,9 +26,9 @@ const Foreground = () => {
       },
     },
     {
-      desc: "This is the test description inside the card component",
-      fileSize: "3mb",
-      close: true,
+      title:"Learning",
+      text: "This is the test description inside the card component",
+      priority:1,
       tag: {
         isOpen: true,
         tagTitle: "Upload",
