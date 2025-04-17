@@ -5,6 +5,7 @@ import { IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion";
 import { MdDeleteOutline } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
+import { LiaEdit } from "react-icons/lia";
 
 //called from Foreground.jsx
 const Card = ({ data, reference }) => {
@@ -34,16 +35,12 @@ const Card = ({ data, reference }) => {
         <div className="border-[1px] border-zinc-800"></div>
         <div className="flex items-center justify-between mb-2 mt-1  px-5 ">
           <span className="flex items-center justify-center">
-            <FaRegEye fontSize={"20px"}/>
+            <LiaEdit fontSize={"20px"}/>
           </span>
-          <div className="flex items-center gap-3">
-            {/* <span className="flex items-center justify-center">
-              <CiEdit fontSize={"20px"}/>
-            </span> */}
+         
             <span className="flex items-center justify-center">
               <MdDeleteOutline fontSize={"20px"}/>
             </span>
-          </div>
         </div>
         {data?.tag?.isOpen && (
           <div
