@@ -27,20 +27,17 @@ const Card = ({ data, reference }) => {
 
       <p className="text-sm text-center">Doc Title</p>
       <div className="border-[1px] border-zinc-800"></div>
-      <p className="text-sm mt-2 text-center font-normal ">
-        {data?.desc}
-      </p>
+      <p className="text-sm mt-2 text-center font-normal ">{data?.desc}</p>
 
       <div className="footer absolute bottom-0  w-full left-0 ">
         <div className="border-[1px] border-zinc-800"></div>
         <div className="flex items-center justify-between mb-2 mt-1  px-5 ">
           <span className="flex items-center justify-center">
-            <LiaEdit fontSize={"20px"}/>
+            <MdDeleteOutline fontSize={"20px"} />
           </span>
-         
-            <span className="flex items-center justify-center">
-              <MdDeleteOutline fontSize={"20px"}/>
-            </span>
+          <span className="flex items-center justify-center">
+            <LiaEdit fontSize={"20px"} />
+          </span>
         </div>
         {data?.tag?.isOpen && (
           <div
