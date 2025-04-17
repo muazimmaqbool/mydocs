@@ -7,7 +7,7 @@ import { MdDeleteOutline } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
 import { LiaEdit } from "react-icons/lia";
 
-{/*Note: */}
+{/*Note:to convert hex color into tailwind css visit this website: https://hextotailwind.com/ */}
 
 //called from Foreground.jsx
 const Card = ({ data, reference }) => {
