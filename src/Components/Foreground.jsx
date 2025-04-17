@@ -18,7 +18,7 @@ const Foreground = () => {
     {
       title:"Workout Schedule",
       text: "This is the test description inside the card component",
-      priority:2,
+      priority:1,
       tag: {
         isOpen: true,
         tagTitle: "Upload",
@@ -28,7 +28,7 @@ const Foreground = () => {
     {
       title:"Learning",
       text: "This is the test description inside the card component",
-      priority:1,
+      priority:3,
       tag: {
         isOpen: true,
         tagTitle: "Upload",
