@@ -7,6 +7,8 @@ import { MdDeleteOutline } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
 import { LiaEdit } from "react-icons/lia";
 
+{/*Note: */}
+
 //called from Foreground.jsx
 const Card = ({ data, reference }) => {
   //Drag docs: https://motion.dev/docs/react-gestures#drag
@@ -39,15 +41,23 @@ const Card = ({ data, reference }) => {
             <LiaEdit fontSize={"20px"} />
           </span>
         </div>
-        {data?.tag?.isOpen && (
-          <div
-            className={`tag w-full py-1 ${
-              data?.tag?.tagColor === "blue" ? "bg-blue-600" : "bg-green-600"
-            } flex items-center justify-center`}
-          >
-            <h3 className="text-sm font-semibold">{data?.tag.tagTitle}</h3>
-          </div>
-        )}
+        <div
+          className={`tag w-full py-1 ${
+            data?.priority === 0
+              ? "bg-red-700"
+              : data?.priority === 1
+              ? "bg-red-200"
+              : data?.priority === 2
+              ? "bg-amber-200"
+              : data?.priority === 3
+              ? "bg-purple-200"
+              : data?.priority === 4
+              ? "bg-sky-200"
+              : "bg-green-600"
+          } flex items-center justify-center`}
+        >
+          <h3 className="text-sm font-semibold">{data?.tag.tagTitle}</h3>
+        </div>
       </div>
     </motion.div>
   );
