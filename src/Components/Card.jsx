@@ -56,7 +56,7 @@ const Card = ({ data, reference }) => {
               : "bg-green-600"
           } flex items-center justify-center`}
         >
-          <h3 className="text-sm font-semibold"></h3>
+          <h3 className="text-sm text-black font-semibold">View</h3>
         </div>
       </div>
     </motion.div>
