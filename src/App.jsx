@@ -1,6 +1,7 @@
 import React from "react";
 import Background from "./Components/Background";
 import Foreground from "./Components/Foreground";
+import Footer from "./Components/Footer";
 
 //docs of tailwind css: https://tailwindcss.com/docs/installation/using-vite
 
@@ -11,6 +12,7 @@ const App = () => {
       {/* h-screen: height will be size of screen */}
       <Background/>
       <Foreground/>
+      <Footer/>
     </div>
   );
 };
