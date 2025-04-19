@@ -9,31 +9,16 @@ const Foreground = () => {
       title:"Fix this bug",
       text: "This is the test description inside the card component",
       priority:0,
-      tag: {
-        isOpen: true,
-        tagTitle: "Download Now",
-        tagColor: "green",
-      },
     },
     {
       title:"Workout Schedule",
       text: "This is the test description inside the card component",
       priority:1,
-      tag: {
-        isOpen: true,
-        tagTitle: "Upload",
-        tagColor: "blue",
-      },
     },
     {
       title:"Learning",
       text: "This is the test description inside the card component",
       priority:3,
-      tag: {
-        isOpen: true,
-        tagTitle: "Upload",
-        tagColor: "green",
-      },
     },
   ];
   const ref=useRef(null) //this ref will be used as a boundary in the Card component for dragging
