@@ -7,7 +7,7 @@ import Footer from "./Components/Footer";
 
 //called from main.jsx
 const App = () => {
-  const [isDrag, setisDrag] = useState(false);
+  const [isDrag, setisDrag] = useState(true);
   return (
     <div className="relative w-full h-screen bg-zinc-800">
       {/* h-screen: height will be size of screen */}
