@@ -3,7 +3,7 @@ import Card from "./Card";
 
 //called from App.jsx
 //the cards will come inside this component
-const Foreground = () => {
+const Foreground = ({isDrag}) => {
   const data = [
     {
       title:"Fix this bug",
@@ -27,7 +27,7 @@ const Foreground = () => {
       {/* bg-sky-800/50 means 50% transparent, 50 means 50% opacity */}
       {
         data.map((item,index)=>(
-          <Card data={item} reference={ref}/>
+          <Card data={item} reference={ref} isDrag={isDrag}/>
         ))
       }
     </div>

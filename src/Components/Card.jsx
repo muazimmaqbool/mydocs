@@ -10,11 +10,11 @@ import { LiaEdit } from "react-icons/lia";
 {/*Note:to convert hex color into tailwind css visit this website: https://hextotailwind.com/ */}
 
 //called from Foreground.jsx
-const Card = ({ data, reference }) => {
+const Card = ({ data, reference,isDrag }) => {
   //Drag docs: https://motion.dev/docs/react-gestures#drag
   return (
     <motion.div
-      drag
+      drag={isDrag}
       dragConstraints={reference}
       whileDrag={{ scale: 1.1 }}
       dragElastic={0.1}
