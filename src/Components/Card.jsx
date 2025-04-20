@@ -54,7 +54,7 @@ const Card = ({ data, reference,isDrag }) => {
               : data?.priority === 4
               ? "bg-sky-200"
               : "bg-green-600"
-          } flex items-center justify-center opacity-50`}
+          } flex items-center justify-center`}
         >
           <h3 className="text-sm text-black font-semibold">View</h3>
         </div>
