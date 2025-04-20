@@ -18,7 +18,7 @@ const Footer = ({setisDrag,isDrag}) => {
           href="https://github.com/muazimmaqbool/mydocs"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center gap-1 text-sm cursor-pointer text-black font-semibold bg-zinc-300 p-2 rounded-xl"
+          class="flex items-center gap-1 text-sm cursor-pointer text-black font-semibold bg-zinc-400 p-2 rounded-xl transition-all duration-[200ms] ease hover:bg-zinc-300"
         >
           <p>Star on GitHub</p> <FaStar />
         </a>
