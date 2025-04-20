@@ -18,19 +18,19 @@ const Footer = () => {
           <p>Star on GitHub</p> <FaStar />
         </a>
         <div className="flex items-center font-normal text-zinc-400 text-md gap-5">
-          <div className="flex items-center gap-1 transition-all duration-[300ms] ease hover:text-zinc-100 hover:scale-110">
+          <div className="flex items-center gap-1 cursor-pointer transition-all duration-[300ms] ease hover:text-zinc-100 hover:scale-110">
             <CiSettings />
             Settings
           </div>
-          <div className="flex items-center gap-1 transition-all duration-[300ms] ease hover:text-zinc-100 hover:scale-110">
+          <div className="flex items-center gap-1 cursor-pointer transition-all duration-[300ms] ease hover:text-zinc-100 hover:scale-110">
             <IoLockClosedOutline />
             Lock Ui
           </div>
-          <div className="flex items-center gap-1 transition-all duration-[300ms] ease hover:text-zinc-100 hover:scale-110">
+          <div className="flex items-center gap-1 cursor-pointer transition-all duration-[300ms] ease hover:text-zinc-100 hover:scale-110">
             <SlDocs />
             Add Doc
           </div>
-          <div className="flex items-center gap-1 transition-all duration-[300ms] ease hover:text-zinc-100 hover:scale-110">
+          <div className="flex items-center gap-1 cursor-pointer transition-all duration-[300ms] ease hover:text-zinc-100 hover:scale-110">
             <GoTasklist />
             Add Task
           </div>
