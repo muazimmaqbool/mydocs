@@ -1,31 +1,38 @@
-import React from 'react'
+import React from "react";
+import { CiSettings } from "react-icons/ci";
+import { FaStar } from "react-icons/fa";
+import { GoTasklist } from "react-icons/go";
+import { IoLockClosedOutline } from "react-icons/io5";
+import { SlDocs } from "react-icons/sl";
 
 const Footer = () => {
   return (
-    
+    <footer class="z-10 absolute bottom-0 left-1/2 -translate-x-[50%] w-3xl  bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <div class="flex items-center gap-1 text-sm text-black font-semibold bg-zinc-300 p-2 rounded-xl">
+          <p>Star on GitHub</p> <FaStar />
+        </div>
+        <div className="flex items-center font-normal text-zinc-400 text-md gap-5">
+          <div className="flex items-center gap-1 transition-all duration-[300ms] ease hover:text-zinc-100 hover:scale-110">
+            <CiSettings />
+            Settings
+          </div>
+          <div className="flex items-center gap-1 transition-all duration-[300ms] ease hover:text-zinc-100 hover:scale-110">
+            <IoLockClosedOutline />
+            Lock Ui
+          </div>
+          <div className="flex items-center gap-1 transition-all duration-[300ms] ease hover:text-zinc-100 hover:scale-110">
+            <SlDocs />
+            Add Doc
+          </div>
+          <div className="flex items-center gap-1 transition-all duration-[300ms] ease hover:text-zinc-100 hover:scale-110">
+            <GoTasklist />
+            Add Task
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-<footer class="z-10 absolute bottom-0 left-1/2 -translate-x-[50%] w-3xl  bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">About</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline">Contact</a>
-        </li>
-    </ul>
-    </div>
-</footer>
-
-  )
-}
-
-export default Footer
+export default Footer;
